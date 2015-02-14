@@ -1,0 +1,129 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  font-family: Avenir-Book;
+  text-rendering: optimizeLegibility;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container { 
+  @media (min-width: 992px) {
+    width: 1170px;  
+  }
+}
+
+.col-centered {
+  float: none;
+  font-weight: bold;
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.shop-logo { margin: auto; }
+
+.item {
+  margin-top: 5em;
+  .item-meta {
+    display: table;
+    min-height: 575px;
+    .item-details-full {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .brand-name {
+      color: inherit;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.05rem;
+      margin: 0 0 1em;    
+    }
+    .item-info {
+      margin-bottom: 1em;
+      h1 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+      }
+      .item-code {
+        font-weight: 200;
+      }
+    }
+    .item-desc {
+      font-size: 10px;
+      font-weight: 200;
+      color: #222222;
+      line-height: 1.5;
+    }
+  }
+  .item-buy {
+    display: table;
+    height: 425px;
+    .transaction {
+      @media (min-width: 768px) {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .item-price {
+        font-size: 24px;
+        color: #222222;
+        line-height: 33px;
+        margin-bottom: 10px;
+      }
+      .shipping-info {
+        font-size: 12px;
+        color: #222222;
+        line-height: 16px;
+        margin-bottom: 20px;
+      }
+      .item-select {
+        .full {
+          width: 100%;
+          .upper {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+          }
+        }
+        .size-select {
+          display: block;
+          border: 1px solid #8C8C8C;
+          border-radius: 0;
+          font-size: 14px;
+          color: #222222;
+          line-height: 16px;
+          text-align: center;
+          margin: 0 auto 6px;
+          width: 144px;
+          height: 30px;
+        }
+        .submit {
+          background: #000000;
+          border: 1px solid #8C8C8C;
+          font-size: 10px !important;
+          font-weight: 200;
+          letter-spacing: 0.2em;
+          color: #FFFFFF;
+          line-height: 10px;
+          text-transform: uppercase;;
+          width: 144px;
+          margin-top: 0.8em;
+          margin-left: 5px;
+          padding: 1.5em 0;
+        }
+      }
+    }
+  }
+}
